@@ -23,7 +23,7 @@ This project processes audio files from a local directory and transcribes them t
 
 ## Project Structure
 
-```
+``` text
 .
 ├── README.md                 # Project documentation
 ├── transcriber.py            # Main transcription script
@@ -57,7 +57,8 @@ This project processes audio files from a local directory and transcribes them t
    ```
 
 3. **Install dependencies**
-   ```bash
+
+   ``` bash
    pip install -r requirements.txt
    ```
 
@@ -75,7 +76,7 @@ This project processes audio files from a local directory and transcribes them t
 
 ### Example
 
-```
+``` bash
 Input:  audios/meeting.mp3
 Output: transcricoes/meeting.txt (contains the Portuguese transcription)
 ```
