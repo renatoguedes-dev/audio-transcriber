@@ -1,11 +1,14 @@
 import os
 
 import whisper
+from dotenv import load_config, load_dotenv
 
 model = whisper.load_model("turbo")
 
-audio_dir = "audios"
-output_dir = "transcricoes"
+# Puxa os caminhos do arquivo .env (com um valor padrão caso não encontre)
+audio_dir = os.getenv("AUDIO_DIR", "audios")
+output_dir = os.getenv("OUTPUT_DIR", "transcricoes")
+
 os.makedirs(output_dir, exist_ok=True)
 
 formats = (".mp3", ".mp4", ".m4a", ".wav", ".ogg", ".flac", ".mkv")
